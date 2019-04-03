@@ -1,0 +1,38 @@
+###################################################################################
+##
+##
+## ======> Separator between package name and # is TWO TAB  <================
+##
+##
+###################################################################################
+#
+#A list of python packages to install in the image
+#
+# This file is a commented list of packages to install, with names as they appear in pip
+#
+#
+# package_name		#A comment or link about the package. Note that separation between package name and # is TWO TAB
+#
+### Solution for some Python 2/3 compatibility issues:
+#
+# package_name Python2	#This package will only be installed for python2
+# package_name Python3  #This package will only be installed for python3
+
+
+#Essentials
+pandas		#Pandas http://pandas.pydata.org/
+numpy		#Numpy http://www.numpy.org/
+scipy
+sklearn		#Scikit-learn http://scikit-learn.org/stable/
+
+# Extra
+xgboost		#XGBoost -
+
+#Plotting libraries
+seaborn		#Eye candy plotting library http://seaborn.pydata.org/
+bokeh		#Yet another eye candy plotting library http://bokeh.pydata.org/en/latest/
+geopandas		#GeoPandas is an open source project to make working with geospatial data in python easier.  http://geopandas.org/
+wordcloud			# WordCloud library (https://pypi.python.org/pypi/wordcloud)
+gmaps		#Plot things on Google Maps inside Jupyter https://github.com/pbugnion/gmaps (NB: requires some extra stuff to be installed manually)
+ipywidgets		#Dependency for, among others, gmaps - https://github.com/ipython/ipywidgets
+graphviz		#Dependency for XGBoost needed to draw trees

@@ -1,0 +1,30 @@
+###################################################################################
+##
+##
+## ======> Separatior between package name and # is TWO TAB  <================
+##
+##
+###################################################################################
+
+#A list of .deb packages to install in the image
+#
+# This file is a commented list of packages to install, with names as they appear in apt-get
+#
+#
+# package_name		#A comment or link about the package. Not that separation between package name and # is TWO TAB
+#
+
+#General utilities
+curl
+apt-transport-https
+build-essential
+
+#Python 3
+python3
+python3-pip
+python3-matplotlib
+
+#Dependencies
+libgit2-dev
+swig
+graphviz 	#Required by XGboot to draw trees
