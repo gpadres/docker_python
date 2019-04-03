@@ -36,7 +36,3 @@ RUN mkdir /data
 
 #Fix some folders and permissions so that the container can be run as non-root
 RUN mkdir /.jupyter && mkdir /.local && chmod 777 /.jupyter && chmod 777 /.local
-
-#The command to run it all
-CMD cd /data
-#CMD /usr/local/bin/jupyter lab --port=$PORT --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''
