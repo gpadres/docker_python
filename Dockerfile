@@ -38,5 +38,4 @@ RUN mkdir /data
 RUN mkdir /.jupyter && mkdir /.local && chmod 777 /.jupyter && chmod 777 /.local
 
 #The command to run it all
-CMD cd /data
-#CMD /usr/local/bin/jupyter lab --port=$PORT --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''
+CMD cd /data && /usr/local/bin/jupyter lab --port=$PORT --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''
