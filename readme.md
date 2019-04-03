@@ -1,15 +1,7 @@
-# Light JupyterLab with Python3 example
+# Super Light example with Python3.
 
-1. Build image `docker build --tag=jupyter_light . `
+1. Build image `docker build --tag=super_light_example .`
 
-1. Run image ``docker run -ti -p 8888:8888 -v "`pwd`":/data jupyter_light``
+1. Run image ``docker run -v "`pwd`":/app super_light_example``
 
-    Note: you need to run the image in the directory you want JupyterLab to access.
-
-    Alternatively you can pull the image:
-
-    ``docker run -ti -p 8888:8888 -v "`pwd`":/data gpadres/docker_python:jupyter_light``
-
-    Running the image will start JupyterLab in the container.
-
-1. From host computer, via a browser window access JupyterLab on address `localhost:8888`
+    Note: you need to run the image in the same directory where `data_in.csv` is located.
