@@ -2,7 +2,9 @@
 
 1. Build image `docker build --tag=jupyter_light_workshop . `
 
-1. Run image `docker run -ti -p 8888:8888 -v "`pwd`":/data jupyter_light_workshop`. Note: you need to run the image in the directory you want JupyterLab to access.
+1. Run image `docker run -ti -p 8888:8888 -v "`pwd`":/data jupyter_light_workshop`.
+
+  Note: you need to run the image in the directory you want JupyterLab to access.
 
   Running the image will open a terminal window in the container, where you will be acting as root.
 
