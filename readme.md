@@ -8,7 +8,7 @@
 
     Running the image will open a terminal window in the container, where you will be acting as root.
 
-1. Access `/data` directory `cd \data`. This directory has mounted the wanted directory from the host.
+1. Access `/data` directory `cd data`. This directory has mounted the wanted directory from the host.
 
 1. Run JupyterLab within the container ``/usr/local/bin/jupyter lab --port=8888 --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''``
 
