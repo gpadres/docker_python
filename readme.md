@@ -1,15 +1,21 @@
-# Light JupyterLab with Python3 example
+# First example of Docker with Python Flask app
 
-1. Build image `docker build --tag=jupyter_light . `
+1. Build image `docker build --tag=friendlyhello .`
 
-1. Run image ``docker run -ti -p 8888:8888 -v "`pwd`":/data jupyter_light``
+1. Check for images `docker image ls`
 
-    Note: you need to run the image in the directory you want JupyterLab to access.
+1. Run image ``docker run -p 4000:80 friendlyhello``
 
-    Alternatively you can pull the image:
+    Note: the `-p` maps the host's port 4000 to the container port 80.
 
-    ``docker run -ti -p 8888:8888 -v "`pwd`":/data gpadres/docker_python:jupyter_light``
+1. From host computer, via a browser window access Flask App on address `localhost:4000`
 
-    Running the image will start JupyterLab in the container.
+1. Hit `CTRL+C` to quit in the terminal.
 
-1. From host computer, via a browser window access JupyterLab on address `localhost:8888`
+Alternatively:
+
+1. Run image in detached mode: ``docker run -d -p 4000:80 friendlyhello``
+
+1. List containers that are running `docker ps`. Look for the `CONTAINER_ID` that is running.
+
+1. Stop container `docker container stop <CONTAINER_ID>`
