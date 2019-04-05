@@ -24,6 +24,7 @@ pandas		#Pandas http://pandas.pydata.org/
 numpy		#Numpy http://www.numpy.org/
 scipy
 sklearn		#Scikit-learn http://scikit-learn.org/stable/
+pyarrow		#Pyarrow in order to save parquet files
 
 # Extra
 xgboost		#XGBoost -
