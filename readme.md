@@ -2,13 +2,13 @@
 
 1. Build image `docker build --tag=jupyter_light . `
 
-1. Run image ``docker run -ti -p 8888:8888 -v "`pwd`":/data jupyter_light``
+1. Run image ``docker run -ti -p 8888:8888 -v "`pwd`":/project jupyter_light``
 
     Note: you need to run the image in the directory you want JupyterLab to access.
 
     Alternatively you can pull the image:
 
-    ``docker run -ti -p 8888:8888 -v "`pwd`":/data gpadres/docker_python:jupyter_light``
+    ``docker run -ti -p 8888:8888 -v "`pwd`":/project gpadres/docker_python:jupyter_light``
 
     Running the image will start JupyterLab in the container.
 

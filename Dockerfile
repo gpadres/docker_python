@@ -32,10 +32,11 @@ COPY python_packages.list /
 RUN python3 -m pip install --upgrade `cat python_packages.list | awk -F'\t'  '($1!~/^#/) && ($1!~/^$/) && (($2=="") || ($2=="Python3")) {print $1}' `
 
 #Jupyter will be run rooted into that folder - mount whatever the user needs into that folder
-RUN mkdir /data
+RUN mkdir /project
+
 
 #Fix some folders and permissions so that the container can be run as non-root
 RUN mkdir /.jupyter && mkdir /.local && chmod 777 /.jupyter && chmod 777 /.local
 
 #The command to run it all
-CMD cd /data && /usr/local/bin/jupyter lab --port=$PORT --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''
+CMD cd /project && /usr/local/bin/jupyter lab --port=$PORT --ip=0.0.0.0 --no-browser --allow-root --LabApp.token=''
