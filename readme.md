@@ -8,7 +8,7 @@
 
     Alternatively you can pull the image:
 
-    ``docker run -ti -p 8888:8888 -v "`pwd`":/project gpadres/docker_python:jupyter_light``
+    ``docker run -ti -p 8888:8888 -v "`pwd`":/project gpadres/jupyter_light``
 
     Running the image will start JupyterLab in the container.
 
