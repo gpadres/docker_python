@@ -24,21 +24,21 @@ pandas		#Pandas http://pandas.pydata.org/
 numpy		#Numpy http://www.numpy.org/
 scipy
 sklearn		#Scikit-learn http://scikit-learn.org/stable/
-pyarrow		#Pyarrow in order to save parquet files
-xlrd		#Excel support
+#pyarrow		#Pyarrow in order to save parquet files
+#xlrd		#Excel support
 
 
 # Extra
-xgboost		#XGBoost -
+#xgboost		#XGBoost -
 
 #Plotting libraries
-seaborn		#Eye candy plotting library http://seaborn.pydata.org/
+#seaborn		#Eye candy plotting library http://seaborn.pydata.org/
 bokeh		#Yet another eye candy plotting library http://bokeh.pydata.org/en/latest/
-geopandas		#GeoPandas is an open source project to make working with geospatial data in python easier.  http://geopandas.org/
-wordcloud			# WordCloud library (https://pypi.python.org/pypi/wordcloud)
-gmaps		#Plot things on Google Maps inside Jupyter https://github.com/pbugnion/gmaps (NB: requires some extra stuff to be installed manually)
-ipywidgets		#Dependency for, among others, gmaps - https://github.com/ipython/ipywidgets
-graphviz		#Dependency for XGBoost needed to draw trees
+#geopandas		#GeoPandas is an open source project to make working with geospatial data in python easier.  http://geopandas.org/
+#wordcloud			# WordCloud library (https://pypi.python.org/pypi/wordcloud)
+#gmaps		#Plot things on Google Maps inside Jupyter https://github.com/pbugnion/gmaps (NB: requires some extra stuff to be installed manually)
+#ipywidgets		#Dependency for, among others, gmaps - https://github.com/ipython/ipywidgets
+#graphviz		#Dependency for XGBoost needed to draw trees
 
 #Heko
-psycopg2
+psycopg2-binary
