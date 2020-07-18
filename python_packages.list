@@ -39,3 +39,6 @@ wordcloud			# WordCloud library (https://pypi.python.org/pypi/wordcloud)
 gmaps		#Plot things on Google Maps inside Jupyter https://github.com/pbugnion/gmaps (NB: requires some extra stuff to be installed manually)
 ipywidgets		#Dependency for, among others, gmaps - https://github.com/ipython/ipywidgets
 graphviz		#Dependency for XGBoost needed to draw trees
+
+#Heko
+psycopg2
